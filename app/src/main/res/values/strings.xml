@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">StrongInHome</string>
+    <string name="rutinaEscoger">Escoge la rutina que desees realizar</string>
+    <string name="tvanimate">¡Animate a cuidar tu cuerpo de manera responsable!</string>
+    <string name="tvqueremos">En StrongInHome queremos que estes saludable, por eso recomendamos la supervisión de un especialista.</string>
+    <string name="tvbtncomenzar">¡Comenzar!</string>
+    <string-array name="GENERO">
+        <item>Género</item>
+        <item>Femenimo</item>
+        <item>Masculino</item>
+    </string-array>
+    <string name="tituloMainActivity">Bienvenido a Strong in Home</string>
+    <string name="tituloDatosP">Datos Personales</string>
+    <string name="Botonsiguiente">siguiente</string>
+</resources>
