@@ -4,15 +4,13 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.core.view.LayoutInflaterCompat;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -33,13 +31,15 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolderCVRutinas holder, final int position) {
         final Rutinas rutina = dataSet.get(position);
-        holder.titleRutina.setText(rutina.getTitle());
+
         holder.ivRutina.setImageResource(rutina.idRecurso);
+        holder.titleEjercicio.setText(rutina.getTitleEjer());
+        holder.titleRutina.setText(rutina.getTitleRutina());
         holder.seleccionar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),ejercicioAccion.class);
-                intent.putExtra(ejercicioAccion.RUTINA, rutina.getTitle());
+                intent.putExtra(ejercicioAccion.RUTINA, rutina.getTitleRutina());
                 v.getContext().startActivity(intent);
             }
         });
@@ -52,14 +52,16 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
 
     public class ViewHolderCVRutinas extends  RecyclerView.ViewHolder {
         private ImageView ivRutina;
+        private TextView titleEjercicio;
         private TextView titleRutina;
-        private ImageButton seleccionar;
+        private Button seleccionar;
 
         public ViewHolderCVRutinas(View view){
             super(view);
             ivRutina = (ImageView) view.findViewById(R.id.ivCvRutina);
+            titleEjercicio = (TextView) view.findViewById(R.id.tvEjercicio);
             titleRutina = (TextView) view.findViewById(R.id.tvTituloRutina);
-            seleccionar = (ImageButton)view.findViewById(R.id.fabSeleccionar);
+            seleccionar = (Button)view.findViewById(R.id.btnEmpezar);
 
 
         }

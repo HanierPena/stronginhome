@@ -11,11 +11,14 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 import java.util.Calendar;
 
 public class formulario extends AppCompatActivity {
     private Spinner spinner1;
-    private EditText nombretxt, edadtxt, estaturatxt, pesotxt;
+    private TextInputLayout nombretxt, edadtxt, estaturatxt, pesotxt;
 
 
 
@@ -33,30 +36,30 @@ public class formulario extends AppCompatActivity {
 
     public void mostrarEjercicios(View view){
 
-        nombretxt = (EditText) findViewById(R.id.editTextTextPersonName);
-        edadtxt = (EditText) findViewById(R.id.et_date);
-        estaturatxt = (EditText) findViewById(R.id.editTextTextPersonName3);
-        pesotxt = (EditText) findViewById(R.id.editTextTextPersonName4);
+        nombretxt = (TextInputLayout) findViewById(R.id.editTextTextPersonName);
+        edadtxt = (TextInputLayout) findViewById(R.id.et_date);
+        estaturatxt = (TextInputLayout) findViewById(R.id.editTextTextPersonName3);
+        pesotxt = (TextInputLayout) findViewById(R.id.editTextTextPersonName4);
         spinner1 = (Spinner)findViewById(R.id.spinner);
 
 
-        if(nombretxt.getText().toString().isEmpty()){
+        if(nombretxt.getEditText().getText().toString().isEmpty()){
             Toast.makeText(this, "Campo Nombre vacio", Toast.LENGTH_SHORT).show();
 
-        }else if (edadtxt.getText().toString().isEmpty()){
+        }else if (edadtxt.getEditText().getText().toString().isEmpty()){
             Toast.makeText(this, "Campo Edad vacio", Toast.LENGTH_SHORT).show();
 
-        }else  if (estaturatxt.getText().toString().isEmpty()){
+        }else  if (estaturatxt.getEditText().getText().toString().isEmpty()){
             Toast.makeText(this, "Campo Estatura vacio", Toast.LENGTH_SHORT).show();
 
-        }else  if(pesotxt.getText().toString().isEmpty()){
+        }else  if(pesotxt.getEditText().getText().toString().isEmpty()){
             Toast.makeText(this, "Campo Peso vacio", Toast.LENGTH_SHORT).show();
 
         }else if (spinner1.getSelectedItem().toString().equals("GENERO")){
             Toast.makeText(this, "Campo Genero vacio", Toast.LENGTH_SHORT).show();
         }else{
-             String [] datos = {nombretxt.getText().toString(), edadtxt.getText().toString(),
-                    estaturatxt.getText().toString(),pesotxt.getText().toString(),
+             String [] datos = {nombretxt.getEditText().getText().toString(), edadtxt.getEditText().getText().toString(),
+                    estaturatxt.getEditText().getText().toString(),pesotxt.getEditText().getText().toString(),
                     spinner1.getSelectedItem().toString()};
 
             Intent intent = new Intent(this, Ejercicios.class);
