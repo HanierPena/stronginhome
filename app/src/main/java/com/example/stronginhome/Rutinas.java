@@ -1,16 +1,23 @@
 package com.example.stronginhome;
 
 public class Rutinas {
-    String title;
     int idRecurso;
+    String titleEjer;
+    String titleRutina;
 
-    public  Rutinas(String title, int idRecurso){
-        this.title=title;
+
+    public  Rutinas(int idRecurso, String titleEjer, String titleRutina){
+        this.titleEjer=titleEjer;
+        this.titleRutina=titleRutina;
         this.idRecurso=idRecurso;
     }
 
-    public String getTitle() {
-        return title;
+    public String getTitleEjer() {
+        return titleEjer;
+    }
+
+    public String getTitleRutina() {
+        return titleRutina;
     }
 
     public int getIdRecurso() {

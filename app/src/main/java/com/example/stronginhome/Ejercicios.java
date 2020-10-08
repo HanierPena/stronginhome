@@ -40,8 +40,9 @@ public class Ejercicios extends AppCompatActivity {
     }
 
     private void llenarDataSet(){
-        dataSetRutinas.add(new Rutinas("Prevención de Osteoporosis", R.drawable.rodilla));
-        dataSetRutinas.add(new Rutinas("Prevención de pérdida de masa muscular", R.drawable.muscle));
+        dataSetRutinas.add(new Rutinas(R.drawable.calentamiento, "Ejercicio", "Calentamiento"));
+        dataSetRutinas.add(new Rutinas(R.drawable.movilidad, "Ejercicio", "Movilidad"));
+        dataSetRutinas.add(new Rutinas(R.drawable.fuerza, "Ejercicio", "Fuerza"));
 
     }
 }

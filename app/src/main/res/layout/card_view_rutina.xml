@@ -1,61 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
     android:id="@+id/cvRutina"
-    card_view:cardElevation="4dp">
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    card_view:cardElevation="4dp"
+    card_view:contentPaddingLeft="20dp"
+    card_view:contentPaddingRight="20dp"
+    card_view:contentPaddingTop="40dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/fabSeleccionar"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            card_view:srcCompat="@android:drawable/divider_horizontal_bright" />
-
         <ImageView
             android:id="@+id/ivCvRutina"
-            android:layout_width="195dp"
-            android:layout_height="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/muscle"></ImageView>
+            android:scaleType="fitXY"
+            android:src="@drawable/calentamiento"></ImageView>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignEnd="@id/ivCvRutina"
-            android:layout_marginTop="80dp"
-            android:orientation="vertical"
-            android:layout_marginRight="10dp"
-            >
+            android:layout_height="60dp"
+            android:layout_alignLeft="@id/ivCvRutina"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="160dp"
+            android:background="@color/ColorPrimaryLight"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvEjercicio"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:autoText="false"
+                android:paddingStart="20sp"
+                android:text="@string/tvEjercicio"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="12sp">
+
+
+            </TextView>
 
             <TextView
                 android:id="@+id/tvTituloRutina"
                 android:layout_width="180dp"
                 android:layout_height="match_parent"
-                android:text="Prevención de Osteoporosis"
-                android:textSize="24sp"
                 android:layout_marginEnd="2dp"
-                android:textAlignment="center">
-
-
-            </TextView>
+                android:paddingStart="20sp"
+                android:text="@string/tvCalentamiento"
+                android:textAlignment="textStart"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp" />
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnEmpezar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="false"
+            android:layout_marginTop="165dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_empezar"
+            android:text="@string/btnEmpezar"
+            android:textAllCaps="false"
+            android:textColor="@drawable/txt_btn_empezar"
+            android:textSize="12sp" />
+
 
     </RelativeLayout>
-
 
 
 </androidx.cardview.widget.CardView>
