@@ -12,7 +12,6 @@
         <activity android:name=".formulario"></activity>
         <activity android:name=".ejercicioAccion" />
         <activity android:name=".Ejercicios" />
-        <activity android:name=".messagePrevention"></activity>
         <activity android:name=".MainActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
