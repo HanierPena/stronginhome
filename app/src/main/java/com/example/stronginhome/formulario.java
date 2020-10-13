@@ -19,8 +19,11 @@ import java.util.Calendar;
 public class formulario extends AppCompatActivity {
     private Spinner spinner1;
     private TextInputLayout nombretxt, edadtxt, estaturatxt, pesotxt;
+    static Persona person;
 
+    public formulario(){
 
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,12 +61,19 @@ public class formulario extends AppCompatActivity {
         }else if (spinner1.getSelectedItem().toString().equals("GENERO")){
             Toast.makeText(this, "Campo Genero vacio", Toast.LENGTH_SHORT).show();
         }else{
-             String [] datos = {nombretxt.getEditText().getText().toString(), edadtxt.getEditText().getText().toString(),
+           /*  String [] datos = {nombretxt.getEditText().getText().toString(), edadtxt.getEditText().getText().toString(),
                     estaturatxt.getEditText().getText().toString(),pesotxt.getEditText().getText().toString(),
-                    spinner1.getSelectedItem().toString()};
+                    spinner1.getSelectedItem().toString()};*/
+             person = new Persona();
+             person.setNombre(nombretxt.getEditText().getText().toString());
+             person.setEdad(Integer.parseInt(edadtxt.getEditText().getText().toString()));
+             person.setGenero(spinner1.getSelectedItem().toString());
+             person.setEstatura(Float.parseFloat(estaturatxt.getEditText().getText().toString()));
+             person.setPeso(Integer.parseInt(pesotxt.getEditText().getText().toString()));
 
-            Intent intent = new Intent(this, Ejercicios.class);
-            intent.putExtra("datos", datos);
+
+            Intent intent = new Intent(this, Tips.class);
+            /*intent.putExtra("datos", datos);*/
             startActivity(intent);
 
 

@@ -21,10 +21,7 @@ public class Ejercicios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ejercicios);
 
-        Intent intent = getIntent();
-        String [] datos = intent.getStringArrayExtra("datos");
-       // TextView mostrar = (TextView) findViewById(R.id.mensajeEnviado);
-        // mostrar.setText(datos[0]);
+
 
         recyclerView = (RecyclerView)findViewById(R.id.rvRutinas);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
