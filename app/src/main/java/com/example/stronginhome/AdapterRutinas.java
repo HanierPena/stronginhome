@@ -38,7 +38,7 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
         holder.seleccionar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(v.getContext(),ejercicioAccion.class);
+                Intent intent = new Intent(v.getContext(),info_ejercicio.class);
                 intent.putExtra(ejercicioAccion.RUTINA, rutina.getTitleRutina());
                 v.getContext().startActivity(intent);
             }

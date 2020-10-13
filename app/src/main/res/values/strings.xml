@@ -8,6 +8,10 @@
     <string name="tvMuscular">Muscular</string>
     <string name="tvComienza">Comienza tu plan de ejercicios</string>
     <string name="btnEmpezar">Empezar</string>
+    <string name="txtCalorias">Calorias</string>
+    <string name="txtActividad">Actividad</string>
+    <string name="txtTiempo">Tiempo</string>
+    <string name="txtComenzar">Comenzar</string>
     <string-array name="GENERO">
         <item>Género</item>
         <item>Femenimo</item>
