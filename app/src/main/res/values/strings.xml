@@ -11,7 +11,22 @@
     <string name="txtCalorias">Calorias</string>
     <string name="txtActividad">Actividad</string>
     <string name="txtTiempo">Tiempo</string>
+    <string name="start"></string>
+    <string name="stop"></string>
+    <string name="reset"></string>
+    <string name="ejercicioCalentamiento">Con las piernas abiertas y la espalda recta, sientate en el asiento de tu preferencia, luego levantate con las manos inclinadas hacia adelante a la altura de tus hombros. Haz estos movimientos por 30 segundos.</string>
+    <string name="ejercicioFuerza">Con las piernas abiertas y la espalda recta, toma dos botellas de agua o pesas, llévalas a tu pecho y bájalas sin estirar los brazos del todo. Haz estos movimientos por 30 segundos.</string>
+    <string name="ejercicioMovilidad">De pie con las piernas abiertas y sin doblarlas, baja con las dos manos hasta el piso. Luego lleva las manos lo más alto que puedas. Haz estos movimientos durante 30 segundos.</string>
     <string name="txtComenzar">Comenzar</string>
+    <string name="nombreUsuario">Nombre</string>
+    <string name="pesoBajo">Bajo Peso</string>
+    <string name="normal">Normal</string>
+    <string name="sobrepeso">Sobre Peso</string>
+    <string name="obesidad">Obesidad</string>
+    <string name="obesidadM">Obesidad Morbida</string>
+    <string name="tuimc">Tu indice de masa corporal</string>
+
+
     <string-array name="GENERO">
         <item>Género</item>
         <item>Femenimo</item>

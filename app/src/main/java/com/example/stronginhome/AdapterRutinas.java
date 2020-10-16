@@ -29,7 +29,7 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderCVRutinas holder, final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolderCVRutinas holder, final int position) {
         final Rutinas rutina = dataSet.get(position);
 
         holder.ivRutina.setImageResource(rutina.idRecurso);
@@ -39,7 +39,7 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(),info_ejercicio.class);
-                intent.putExtra(ejercicioAccion.RUTINA, rutina.getTitleRutina());
+                intent.putExtra("rutina", holder.titleRutina.getText().toString());
                 v.getContext().startActivity(intent);
             }
         });

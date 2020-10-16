@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="297dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:text="Ejercicio#1"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="334dp"
+        android:layout_height="248dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/white"
+        android:src="@drawable/movilidadg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="374dp"
+        android:layout_height="129dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="468dp"
+        app:autoPlay="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showFullScreenButton="false"
+        app:videoId="7F3JpMGmIeI"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/boton_redondo"
+        android:drawableRight="@android:drawable/ic_media_next"
+        android:onClick="onClickReset"
+        android:paddingRight="4dp"
+        android:text="@string/reset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="40dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/boton_redondo"
+        android:drawableLeft="@android:drawable/ic_media_pause"
+        android:onClick="onClickStop"
+        android:paddingLeft="4dp"
+        android:text="@string/stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="412dp"
+        android:background="@drawable/boton_redondo"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:onClick="onClickStart"
+        android:paddingRight="3dp"
+        android:text="@string/start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="381dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="356dp"
+        android:background="@drawable/boton_cronometro"
+        android:gravity="center"
+        android:text=" 00 Seg"
+        android:textColor="@color/colorPrimary"
+        android:textSize="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="349dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="280dp"
+        android:gravity="center"
+        android:text="@string/ejercicioMovilidad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
