@@ -114,6 +114,7 @@
         android:layout_height="45dp"
         android:layout_marginStart="64dp"
         android:layout_marginTop="24dp"
+        android:onClick="comenzarEjer"
         android:background="@drawable/custom_buttom"
         android:text="@string/txtComenzar"
         android:textColor="@drawable/txt_btn_empezar"

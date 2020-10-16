@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.Time;
+import android.view.View;
 import android.widget.TextView;
 
 public class info_ejercicio extends AppCompatActivity{
@@ -18,8 +19,7 @@ public class info_ejercicio extends AppCompatActivity{
 
         nombre = findViewById(R.id.tvNombre);
         fecha = findViewById(R.id.tvFecha);
-        Intent intent = getIntent();
-        String [] datos = intent.getStringArrayExtra("datos");
+
 
         nombre.setText(formulario.person.getNombre());
 
@@ -40,5 +40,14 @@ public class info_ejercicio extends AppCompatActivity{
 
         // TextView mostrar = (TextView) findViewById(R.id.mensajeEnviado);
         // mostrar.setText(datos[0]);
+    }
+    
+    public void comenzarEjer(View view){
+        Intent intent = getIntent();
+        String  rutina = intent.getStringExtra("rutina");
+        Intent intento = new Intent(this, ejercicioAccion.class);
+        intento.putExtra("rutina", rutina);
+        startActivity(intento);
+
     }
 }
