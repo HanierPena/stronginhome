@@ -23,96 +23,100 @@
 
 
     <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
         android:layout_width="334dp"
         android:layout_height="248dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/white"
         android:src="@drawable/calentamientog"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
-        android:layout_width="374dp"
-        android:layout_height="129dp"
+        android:layout_width="382dp"
+        android:layout_height="122dp"
 
         android:layout_marginStart="16dp"
-        android:layout_marginTop="468dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"
         app:autoPlay="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStart"
+        app:layout_constraintVertical_bias="1.0"
         app:showFullScreenButton="false"
         app:videoId="hWLjMz31cQs"
         tools:ignore="MissingConstraints" />
 
     <Button
+        android:id="@+id/btnStart"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/boton_redondo"
+        android:drawableRight="@android:drawable/ic_media_play"
+        android:onClick="onClickStart"
+        android:paddingRight="3dp"
+        android:text="@string/start"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        app:layout_constraintTop_toBottomOf="@+id/tvTiempo" />
+
+    <Button
         android:id="@+id/btnReset"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/boton_redondo"
         android:drawableRight="@android:drawable/ic_media_next"
         android:onClick="onClickReset"
         android:paddingRight="4dp"
         android:text="@string/reset"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/btnStart"
+        app:layout_constraintTop_toBottomOf="@+id/tvTiempo" />
 
     <Button
         android:id="@+id/btnStop"
         android:layout_width="40dp"
         android:layout_height="42dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="412dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/boton_redondo"
         android:drawableLeft="@android:drawable/ic_media_pause"
         android:onClick="onClickStop"
         android:paddingLeft="4dp"
         android:text="@string/stop"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnStart"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="184dp"
-        android:layout_marginTop="412dp"
-        android:background="@drawable/boton_redondo"
-        android:drawableRight="@android:drawable/ic_media_play"
-        android:onClick="onClickStart"
-        android:paddingRight="3dp"
-        android:text="@string/start"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tvTiempo" />
 
     <TextView
         android:id="@+id/tvTiempo"
         android:layout_width="381dp"
         android:layout_height="43dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="356dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/boton_cronometro"
         android:gravity="center"
         android:text=" 00 Seg"
         android:textColor="@color/colorPrimary"
         android:textSize="33dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="349dp"
         android:layout_height="74dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="280dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
         android:gravity="center"
         android:text="@string/ejercicioCalentamiento"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
         tools:ignore="MissingConstraints" />
 
 
