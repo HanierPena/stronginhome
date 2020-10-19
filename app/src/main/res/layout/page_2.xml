@@ -12,7 +12,7 @@
         android:id="@+id/textView4"
         android:layout_width="293dp"
         android:layout_height="179dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="64dp"
         android:gravity="center"
         android:text="Siempre escucha a tu médico, si sientes dolores contacta a tu servicio de salud."
         android:textColor="@color/cardview_light_background"

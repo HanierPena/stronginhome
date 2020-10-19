@@ -76,8 +76,6 @@ public class ejercicioAccion extends AppCompatActivity {
                     seconds--;
                     if(seconds == 0){
 
-
-                        Toast.makeText(ejercicioAccion.this, "BIIIIIIIIIIIEN", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent (getApplicationContext(), imc.class);
                         startActivity(intent);
 
