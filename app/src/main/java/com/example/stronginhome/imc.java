@@ -46,7 +46,6 @@ public class imc extends AppCompatActivity {
         });
 
         if (imc < 18.5){
-            //bajoPeso.setBackgroundColor(Color.parseColor("#BBF9F9"));
             txPeso.setTextColor(Color.parseColor("#0277BD"));
             bajoPeso.setTextColor(Color.parseColor("#0277BD"));
         }if (imc >= 18.5 && imc < 25){
@@ -62,9 +61,6 @@ public class imc extends AppCompatActivity {
             txPeso.setTextColor(Color.parseColor("#F44336"));
             obesidadM.setTextColor(Color.parseColor("#F44336"));
         }
-
-
-
 
 
 

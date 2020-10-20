@@ -6,6 +6,7 @@ import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,5 +27,10 @@ public class Tips extends AppCompatActivity {
         pager = findViewById(R.id.pager);
         pagerAdapter = new SlaidePagerAdapter(getSupportFragmentManager(), list);
         pager.setAdapter(pagerAdapter);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Imposible volver", Toast.LENGTH_SHORT).show();
     }
 }

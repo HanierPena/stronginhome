@@ -24,8 +24,8 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView3"
-        android:layout_width="334dp"
-        android:layout_height="248dp"
+        android:layout_width="305dp"
+        android:layout_height="205dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="16dp"
         android:background="@android:color/white"
@@ -35,17 +35,14 @@
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
-        android:layout_width="374dp"
-        android:layout_height="129dp"
+        android:layout_width="379dp"
+        android:layout_height="108dp"
 
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
         android:layout_marginBottom="5dp"
         app:autoPlay="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStart"
-        app:layout_constraintVertical_bias="0.771"
         app:showFullScreenButton="false"
         app:videoId="7F3JpMGmIeI"
         tools:ignore="MissingConstraints" />

@@ -61,7 +61,6 @@
             android:paddingLeft="15dp"
             android:paddingTop="10dp"
             android:theme="@style/EditText">
-
         </com.google.android.material.textfield.TextInputEditText>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -97,21 +96,6 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
-    <!--  <EditText
-        android:id="@+id/et_date"
-        android:layout_width="296dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/style_bode_edittext"
-        android:ems="10"
-        android:hint="Edad"
-        android:inputType="number"
-        android:maxLength="3"
-        android:theme="@style/CampoTextoPurpura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" /> -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/editTextTextPersonName4"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"

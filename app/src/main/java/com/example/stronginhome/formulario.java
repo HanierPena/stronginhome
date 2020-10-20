@@ -29,12 +29,18 @@ public class formulario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
+
         spinner1 = (Spinner)findViewById(R.id.spinner);
         String [] opciones = {"GENERO", "Mujer","Hombre"};
         ArrayAdapter <String> adapter = new ArrayAdapter<String>(  this, android.R.layout.simple_spinner_item, opciones);
         spinner1.setAdapter(adapter);
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Imposible volver", Toast.LENGTH_SHORT).show();
     }
 
     public void mostrarEjercicios(View view){
@@ -61,9 +67,7 @@ public class formulario extends AppCompatActivity {
         }else if (spinner1.getSelectedItem().toString().equals("GENERO")){
             Toast.makeText(this, "Campo Genero vacio", Toast.LENGTH_SHORT).show();
         }else{
-           /*  String [] datos = {nombretxt.getEditText().getText().toString(), edadtxt.getEditText().getText().toString(),
-                    estaturatxt.getEditText().getText().toString(),pesotxt.getEditText().getText().toString(),
-                    spinner1.getSelectedItem().toString()};*/
+
              person = new Persona();
              person.setNombre(nombretxt.getEditText().getText().toString());
              person.setEdad(Integer.parseInt(edadtxt.getEditText().getText().toString()));
@@ -71,11 +75,8 @@ public class formulario extends AppCompatActivity {
              person.setEstatura(Float.parseFloat(estaturatxt.getEditText().getText().toString()));
              person.setPeso(Integer.parseInt(pesotxt.getEditText().getText().toString()));
 
-
             Intent intent = new Intent(this, Tips.class);
-            /*intent.putExtra("datos", datos);*/
             startActivity(intent);
-
 
         }
 

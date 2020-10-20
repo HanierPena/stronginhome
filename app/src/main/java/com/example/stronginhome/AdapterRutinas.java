@@ -30,6 +30,7 @@ public class AdapterRutinas extends RecyclerView.Adapter<AdapterRutinas.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolderCVRutinas holder, final int position) {
+
         final Rutinas rutina = dataSet.get(position);
 
         holder.ivRutina.setImageResource(rutina.idRecurso);
