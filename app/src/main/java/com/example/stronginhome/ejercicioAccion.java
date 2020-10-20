@@ -51,7 +51,8 @@ public class ejercicioAccion extends AppCompatActivity {
 
     public void onClickReset(View view){
         running = false;
-        seconds = 0;
+        Intent intent = new Intent (getApplicationContext(), imc.class);
+        startActivity(intent);
     }
 
     public void onSaveInstanceState(Bundle savedInstanceState){

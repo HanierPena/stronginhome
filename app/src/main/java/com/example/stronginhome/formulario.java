@@ -37,6 +37,11 @@ public class formulario extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "Imposible volver", Toast.LENGTH_SHORT).show();
+    }
+
     public void mostrarEjercicios(View view){
 
         nombretxt = (TextInputLayout) findViewById(R.id.editTextTextPersonName);
