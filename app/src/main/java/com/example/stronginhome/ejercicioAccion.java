@@ -1,5 +1,6 @@
 package com.example.stronginhome;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -35,7 +36,7 @@ public class ejercicioAccion extends AppCompatActivity {
             seconds = savedInstanceState.getInt("seconds");
             running = savedInstanceState.getBoolean("running");
         }
-
+        
         runTimer();
     }
 
@@ -61,6 +62,9 @@ public class ejercicioAccion extends AppCompatActivity {
         savedInstanceState.putBoolean("running",running);
     }
 
+
+
+
     private void runTimer(){
         final TextView timeView=(TextView)findViewById(R.id.tvTiempo);
         final Handler handler = new Handler();
@@ -68,10 +72,8 @@ public class ejercicioAccion extends AppCompatActivity {
         handler.post(new Runnable() {
             @Override
             public void run() {
-                /*int hours = seconds/3600;
-                int minute = (seconds%3600)/60;*/
-                int sec =seconds %60;   /*buscar el calculo para solo los 30 seg*/
-                String time = String.format("%02d"+" Seg", sec); //hours, minute
+                int sec =seconds %60;
+                String time = String.format("%02d"+" Seg", sec);
                 timeView.setText(time);
                 if(running){
                     seconds--;
@@ -82,6 +84,8 @@ public class ejercicioAccion extends AppCompatActivity {
 
                     }
                 }
+
+
                 handler.postDelayed(this,1000);
 
             }

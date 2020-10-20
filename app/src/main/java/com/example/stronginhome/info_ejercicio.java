@@ -32,14 +32,6 @@ public class info_ejercicio extends AppCompatActivity{
 
         fecha.setText(mes + "/"+ dia +"/"+ano);
 
-
-
-
-
-
-
-        // TextView mostrar = (TextView) findViewById(R.id.mensajeEnviado);
-        // mostrar.setText(datos[0]);
     }
     
     public void comenzarEjer(View view){
@@ -48,6 +40,5 @@ public class info_ejercicio extends AppCompatActivity{
         Intent intento = new Intent(this, ejercicioAccion.class);
         intento.putExtra("rutina", rutina);
         startActivity(intento);
-
     }
 }

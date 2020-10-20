@@ -33,10 +33,8 @@ public class PageFragment3 extends Fragment {
     }
 
     public void enviar(View view){
-
         Intent intent = new Intent(this.getContext(),Ejercicios.class);
         startActivity(intent);
-
 
     }
 

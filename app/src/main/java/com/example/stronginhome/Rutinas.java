@@ -11,6 +11,9 @@ public class Rutinas {
         this.titleRutina=titleRutina;
         this.idRecurso=idRecurso;
     }
+    public Rutinas(){
+
+    }
 
     public String getTitleEjer() {
         return titleEjer;

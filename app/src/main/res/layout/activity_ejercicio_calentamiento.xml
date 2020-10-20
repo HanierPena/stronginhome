@@ -24,10 +24,10 @@
 
     <pl.droidsonroids.gif.GifImageView
         android:id="@+id/gifImageView"
-        android:layout_width="334dp"
-        android:layout_height="248dp"
+        android:layout_width="359dp"
+        android:layout_height="205dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:background="@android:color/white"
         android:src="@drawable/calentamientog"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,17 +35,14 @@
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
-        android:layout_width="382dp"
-        android:layout_height="122dp"
+        android:layout_width="379dp"
+        android:layout_height="108dp"
 
         android:layout_marginStart="16dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="16dp"
         app:autoPlay="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnStart"
-        app:layout_constraintVertical_bias="1.0"
         app:showFullScreenButton="false"
         app:videoId="hWLjMz31cQs"
         tools:ignore="MissingConstraints" />
@@ -97,7 +94,7 @@
         android:layout_width="381dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/boton_cronometro"
         android:gravity="center"
         android:text=" 00 Seg"

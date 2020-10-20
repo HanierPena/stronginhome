@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="260dp"
         android:layout_height="252dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="44dp"
         android:gravity="center"
         android:text="Debes tener en cuenta tu cuerpo al momento de hacer ejercicio."
         android:textColor="@color/cardview_light_background"
